@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoanActivity">
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="26dp"
+        android:src="@drawable/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Loan Information"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_star" />
+
+    <TextView
+        android:id="@+id/tv_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/purpose"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_sub_purpose"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="What is the purpose of the loan? (e.g., new car, home improvement, education)"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_purpose"
+        app:layout_constraintStart_toStartOf="@id/tv_purpose"/>
+
+    <Spinner
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_purpose"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_purpose"/>
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/duration"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_purpose" />
+
+    <TextView
+        android:id="@+id/tv_sub_duration"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="What is the duration of the loan in months?"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_duration"
+        app:layout_constraintStart_toStartOf="@id/tv_duration"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_duration"
+        style="@style/CustomTextInputLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#00FF00"
+        app:boxStrokeErrorColor="#00FF00"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_duration">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/CustomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_duration"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/enter_amount_here"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/amount"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/til_duration" />
+
+    <TextView
+        android:id="@+id/tv_sub_amount"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="How much loan amount do you need?"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_amount"
+        style="@style/CustomTextInputLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#00FF00"
+        app:boxStrokeErrorColor="#00FF00"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_amount">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/CustomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_amount"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/enter_amount_here"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/go_next"
+        android:id="@+id/btn_next"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_no_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

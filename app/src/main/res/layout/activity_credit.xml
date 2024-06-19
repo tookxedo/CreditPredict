@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".ui.CreditActivity">
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="26dp"
+        android:src="@drawable/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/credits_amp_warranty"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_star" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/credit_history"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_sub_history"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_have_any_phone_number"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_history" />
+
+    <Spinner
+        android:id="@+id/sp_history"
+        android:layout_width="340dp"
+        style="@style/CustomSpinnerDropdownBackground"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_history"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Installment Rate"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_history" />
+
+    <TextView
+        android:id="@+id/tv_sub_rate"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/what_percentage_of_your_income_will_be_used_for_the_loan_installment"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_rate" />
+
+    <Spinner
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_rate"
+        style="@style/CustomSpinnerDropdownBackground"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_rate"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_debtor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/other_debtors"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_rate" />
+
+    <TextView
+        android:id="@+id/tv_sub_debtor"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Do you have any guarantor or co-borrower? (none, co-borrower, guarantor)"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_debtor" />
+
+    <Spinner
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_debtor"
+        style="@style/CustomSpinnerDropdownBackground"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_debtor"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_loan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/other_installment_plans"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_debtor" />
+
+    <TextView
+        android:id="@+id/tv_sub_loan"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_have_any_other_installment_plans_e_g_bank_store_none"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_loan" />
+
+    <Spinner
+        android:id="@+id/sp_other_loan"
+        android:layout_width="340dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_loan"
+        android:layout_height="wrap_content"
+        style="@style/CustomSpinnerDropdownBackground" />
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/go_next"
+        android:id="@+id/btn_next"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_no_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

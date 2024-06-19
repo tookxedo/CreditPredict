@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CreditPredict" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="Theme.CreditPredict" parent="Base.Theme.CreditPredict" />
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/rounded_edit_text</item>
+        <item name="android:padding">16dp</item>
+        <!--        <item name="android:textColorHint">@color/white</item>-->
+        <!--        <item name="android:textColor">@android:color/white</item> &lt;!&ndash; Text color white &ndash;&gt;-->
+    </style>
+    <style name="CustomEditTextWhiteHint" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/white</item>
+        <!--        <item name="android:textColorHint">@color/white</item>-->
+        <!--        <item name="android:textColor">@android:color/white</item> &lt;!&ndash; Text color white &ndash;&gt;-->
+    </style>
+
+    <style name="CustomSpinnerDropdownItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CustomSpinnerDropdownBackground">
+        <item name="android:popupBackground">@color/black</item>
+
+
+    </style>
+
+    <!--    <style name="CustomEditText" parent="Widget.MaterialComponents.TextInputEditText">-->
+    <!--        &lt;!&ndash; Hint text color &ndash;&gt;-->
+    <!--        <item name="android:textColorHint">@color/white</item>-->
+    <!--    </style>-->
+</resources>

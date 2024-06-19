@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FamsActivity">
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="26dp"
+        android:src="@drawable/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/fams_amp_residence"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_star" />
+
+    <TextView
+        android:id="@+id/tv_marital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/marital_status"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_sub_marital"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_your_marital_status_e_g_married_single_divorced_widowed"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_marital"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <Spinner
+        android:id="@+id/sp_marital"
+        android:layout_width="340dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_marital"/>
+
+    <TextView
+        android:id="@+id/tv_housing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/housing_status"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_marital" />
+
+    <TextView
+        android:id="@+id/tv_sub_housing"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_your_housing_status_e_g_renting_own_free_of_charge"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_housing"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <Spinner
+        android:id="@+id/sp_housing"
+        android:layout_width="340dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_housing"/>
+
+    <TextView
+        android:id="@+id/tv_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/present_residence"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_housing" />
+
+    <TextView
+        android:id="@+id/tv_sub_present"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_long_have_you_lived_at_your_current_residence_e_g_less_than_1_year_1_4_years_4_7_years_more_than_7_years"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_present"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <Spinner
+        android:id="@+id/sp_residence"
+        android:layout_width="340dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_present"/>
+
+    <TextView
+        android:id="@+id/tv_liable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/people_liable"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_residence" />
+
+    <TextView
+        android:id="@+id/tv_sub_liable"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_many_people_are_financially_dependent_on_you"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/tv_liable"
+        app:layout_constraintStart_toStartOf="@id/tv_title"/>
+
+    <Spinner
+        android:id="@+id/sp_liable"
+        android:layout_width="340dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_liable"/>
+
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/go_next"
+        android:textSize="12sp"
+        android:id="@+id/btn_next"
+        app:layout_constraintBottom_toTopOf="@id/constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_no_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

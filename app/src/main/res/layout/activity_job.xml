@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".ui.JobActivity">
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="26dp"
+        android:src="@drawable/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/job_history_amp_savings"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_star" />
+
+    <TextView
+        android:id="@+id/tv_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/current_employment_duration"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_sub_current"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_long_have_you_been_working_on_your_current_job"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_current" />
+
+    <Spinner
+        android:id="@+id/sp_employment_duration"
+        android:layout_width="340dp"
+        style="@style/CustomSpinnerDropdownBackground"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_current" />
+
+    <TextView
+        android:id="@+id/tv_saving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/installment_saving"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_employment_duration" />
+
+    <TextView
+        android:id="@+id/tv_sub_saving"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_much_money_have_you_saved_at_this_time"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_saving" />
+
+    <Spinner
+        android:id="@+id/sp_saving"
+        android:layout_width="340dp"
+        style="@style/CustomSpinnerDropdownBackground"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_saving" />
+
+    <TextView
+        android:id="@+id/tv_credit_taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/total_credit_taken"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_saving" />
+
+    <TextView
+        android:id="@+id/tv_sub_credit"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_many_credits_have_you_had_before"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_credit_taken" />
+
+    <Spinner
+        android:id="@+id/sp_credit_taken"
+        android:layout_width="340dp"
+        style="@style/CustomSpinnerDropdownBackground"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_credit" />
+
+    <TextView
+        android:id="@+id/tv_credit_risk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/credit_risk"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/sp_credit_taken" />
+
+    <TextView
+        android:id="@+id/tv_sub_credit_risk"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/does_using_credit_card_nowadays_is_a_good_thing_what_is_your_opinion"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_credit_risk" />
+
+    <Spinner
+        android:id="@+id/sp_credit_risk"
+        android:layout_width="340dp"
+        style="@style/CustomSpinnerDropdownBackground"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_credit_risk" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/analyze"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_no_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

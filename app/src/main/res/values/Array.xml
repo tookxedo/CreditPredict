@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>Select your gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="number">
+        <item>Yes or No</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="employment">
+        <item>Yes or No</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="job_type">
+        <item>Select</item>
+        <item>Management / Self-employed/Highly qualified employee / Officer</item>
+        <item>Skilled employee / Official</item>
+        <item>Unemployed / Unskilled - Non-resident</item>
+        <item>Unskilled / Resident</item>
+    </string-array>
+
+    <string-array name="property">
+        <item>Select</item>
+        <item>Unknown / No property</item>
+        <item>Building society savings agreement / Life insurance</item>
+        <item>Real state</item>
+        <item>Car / Other</item>
+    </string-array>
+
+    <string-array name="purpose">
+        <item>Select</item>
+        <item>Business</item>
+        <item>Car (new)</item>
+        <item>Car (used)</item>
+        <item>Domestic appliance</item>
+        <item>Education</item>
+        <item>Furniture / Equipment</item>
+        <item>Others</item>
+        <item>Radio / Television</item>
+        <item>Repairs</item>
+        <item>Retraining</item>
+    </string-array>
+
+    <string-array name="duration">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="credit">
+        <item>Select</item>
+        <item>All credits at this bank paid back duly</item>
+        <item>Critical account / Other credits existing</item>
+        <item>Delay in paying off in the past</item>
+        <item>Existing credits paid back duly till now</item>
+        <item>No credits taken / All credits paid back duly</item>
+    </string-array>
+
+    <string-array name="debtors">
+        <item>Select</item>
+        <item>Co-applicant</item>
+        <item>Guarantor</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="marital">
+        <item>Select</item>
+        <item>Divorced / Separated</item>
+        <item>Divorced / Separated / Married</item>
+        <item>Married / Widowed</item>
+        <item>Single</item>
+    </string-array>
+
+    <string-array name="housing">
+        <item>Select</item>
+        <item>For free</item>
+        <item>Own</item>
+        <item>Rent</item>
+    </string-array>
+
+    <string-array name="saving">
+        <item>Select</item>
+        <item>... &lt; Rp.900.000</item>
+        <item>Rp.4.500.000 &lt;= ... &lt; Rp.9.000.000</item>
+        <item>Rp.900.000 &lt;= ... &lt; Rp.4.500.000</item>
+        <item>... &gt;= Rp.9.000.000</item>
+        <item>Unknown / No saving account</item>
+    </string-array>
+
+    <string-array name="other_installment">
+        <item>Select</item>
+        <item>Bank</item>
+        <item>None</item>
+        <item>Stores</item>
+    </string-array>
+
+    <string-array name="installment_rate">
+        <item>Select</item>
+        <item>1 %</item>
+        <item>2 %</item>
+        <item>3 %</item>
+        <item>4 %</item>
+    </string-array>
+
+    <string-array name="residence">
+        <item>Select</item>
+        <item>Less than 1 year</item>
+        <item>More than 7 years</item>
+        <item>More than 1 year but less than 4 years</item>
+        <item>More than 4 years but less than 7 years</item>
+    </string-array>
+
+    <string-array name="employment_duration">
+        <item>Select</item>
+        <item>Less than 1 year</item>
+        <item>More than 7 years</item>
+        <item>More than 1 year but less than 4 years</item>
+        <item>More than 4 years but less than 7 years</item>
+    </string-array>
+
+    <string-array name="credit_risk">
+        <item>Select</item>
+        <item>Bad</item>
+        <item>Good</item>
+    </string-array>
+
+    <string-array name="credit_taken">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="liable">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
