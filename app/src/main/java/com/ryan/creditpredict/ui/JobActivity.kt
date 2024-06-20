@@ -183,29 +183,6 @@ class JobActivity : AppCompatActivity() {
 
         binding.btnNext.setOnClickListener {
             if (currentEmploymentDurationIndex != -1 && savingsIndex != -1 && creditTakenIndex != -1 && creditRiskIndex != -1) {
-//                val dataForms = """"{
-//                    "duration": "$durationIndex",
-//                    "credit_history": "$creditIndex",
-//                    "purpose": "$purposeIndex",
-//                    "amount": "$amount",
-//                    "savings": "$savingsIndex",
-//                    "employment_duration": "$employmentIndex",
-//                    "installment_rate": "$installmentRateIndex",
-//                    "gender": "$genderIndex",
-//                    "marital_status": "$maritalIndex",
-//                    "other_debtors": "$otherDebtor",
-//                    "present_residence": "$residenceIndex",
-//                    "property": "$propertyIndex",
-//                    "age": "$age",
-//                    "other_installment_plans": "$otherInstallmentIndex",
-//                    "housing": "$housingIndex",
-//                    "number_credits": "$creditIndex",
-//                    "job": "$jobIndex",
-//                    "people_liable": "$liable",
-//                    "telephone": "$numberIndex",
-//                    "foreign_worker": "$employmentIndex",
-//                    "credit_risk": "1"
-//                }""".trimMargin()
                 val dataForms = JsonObject().apply {
                     addProperty("duration", duration)
                     addProperty("credit_history", creditIndex)
@@ -242,18 +219,6 @@ class JobActivity : AppCompatActivity() {
                             " creditTaken: $creditTaken, jobIndex: $jobIndex, liable: $liable, numberIndex: $numberIndex," +
                             " employmentIndex: $employmentIndex, creditRiskIndex: $creditRiskIndex"
                 )
-
-//                Toast.makeText(
-//                    applicationContext,
-//                    "durationIndex: $durationIndex, creditIndex: $creditIndex, purposeIndex: $purposeIndex" +
-//                            "amount: $amount, savingsIndex: $savingsIndex, currentEmploymentDurationIndex: $currentEmploymentDurationIndex" +
-//                            "installmentRateIndex: $installmentRateIndex, genderIndex: $genderIndex, maritalIndex: $maritalIndex," +
-//                            "otherDebtorIndex: $otherDebtorIndex, residenceIndex: $residenceIndex, propertyIndex: $propertyIndex," +
-//                            " age: $age, otherInstallmentIndex: $otherInstallmentIndex, housingIndex: $housingIndex, " +
-//                            "creditTaken: $creditTaken, jobIndex: $jobIndex, liable: $liable, numberIndex: $numberIndex, " +
-//                            "employmentIndex: $employmentIndex, creditRiskIndex: $creditRiskIndex",
-//                    Toast.LENGTH_LONG
-//                ).show()
 
                 viewModel.jobViewModel.observe(this) {
                     when (it) {
