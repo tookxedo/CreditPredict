@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@color/darken"
     tools:context=".ui.CreditActivity">
 
     <ImageView
@@ -13,10 +13,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="26dp"
-        android:src="@drawable/star"
+        android:src="@drawable/credit_card"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -46,7 +45,7 @@
         android:id="@+id/tv_sub_history"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:text="@string/do_you_have_any_phone_number"
+        android:text="@string/do_you_have_any_phone_number2"
         android:textColor="@color/white"
         android:textSize="10sp"
         android:textStyle="italic"
@@ -159,7 +158,7 @@
         android:layout_width="128dp"
         android:layout_height="40dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/sky_blue"
         android:text="@string/go_next"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -170,8 +169,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/logo_fix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

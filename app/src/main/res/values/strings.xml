@@ -15,6 +15,7 @@
     <string name="go_next">Go Next</string>
     <string name="contact_amp_identity"><![CDATA[Contact & Identity]]></string>
     <string name="do_you_have_any_phone_number">Do you have any phone number?</string>
+    <string name="do_you_have_any_phone_number2">How is your credit history?</string>
     <string name="are_you_working_as_a_foreign_worker_here">Are you working as a foreign worker here?</string>
     <string name="employment_status">Employment Status</string>
     <string name="what_type_of_job_are_you_doing_right_now">What type of job are you doing right now</string>
@@ -38,7 +39,7 @@
     <string name="we_have_analyzed_your_worthness_on_owning_a_credit_card_and_our_data_stated_that_you_are_worth_of_having_a_credit_card_congratulations">We have analyzed your worthness on owning a credit card, and our data stated that you are worth of having a credit card. Congratulations!</string>
     <string name="enter_amount_here">Enter amount here</string>
     <string name="purpose">Purpose</string>
-    <string name="what_percentage_of_your_income_will_be_used_for_the_loan_installment">What percentage of your income will be used for the loan installment?</string>
+    <string name="what_percentage_of_your_income_will_be_used_for_the_loan_installment">How much of your income (in percantage%) will be used for the loan installment?</string>
     <string name="other_installment_plans">Other Installment Plans</string>
     <string name="do_you_have_any_other_installment_plans_e_g_bank_store_none">Do you have any other installment plans? (e.g., bank, store, none)</string>
     <string name="marital_status">Marital Status</string>
